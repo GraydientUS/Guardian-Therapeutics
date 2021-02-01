@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--AOS CSS (used for animations while scrolling) -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+
+    <!--Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"/>
+
+    <title>Guardian Therapeutics</title>
+  </head>
+  <body>
+
+<div class="wrapper">
+<!-- Sidebar ===========================================================================================-->
+        <nav id="sidebar">
+            <div id="dismiss">
+              <svg class="mb-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
+            </div>
+
+            <div class="sidebar-header">
+                <h3></h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <!--<p>EXAMPLE HEADING</p>-->
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <!-- =======================================HOME SUBMENU PLACEHOLDER===========================
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                -->
+                <li>
+                    <a href="ApDC.html">ApDC</a>
+                </li>
+                <li>
+                    <a href="aptamer-discovery.html">Aptamer Discovery</a>
+                </li>
+                
+                
+                <li>
+                    <a href="therapeutic-areas-and-programs.html">Therapeutic Areas & Programs</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">About Us <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="who-we-are.html">Who We Are</a>
+                        </li>
+                        <li>
+                            <a href="our-people.html">Our People</a>
+                        </li>
+                        <li>
+                            <a href="our-partners.html">Our Partners</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <a href="library.html">Library</a>
+                </li> -->
+            </ul>
+
+            <!--=sidebar bottom buttons=-->
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="contact.html" class="download font-weight-normal">Contact Us</a>
+                </li>
+                <!-- <li>
+                    <a href="#" class="article"><i class="fab fa-instagram"></i></a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-list" fill="#2E72B0" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg><!-- hamburger icon -->
+                    </button>
+                   <!-- ============================= top right collapsable menu button =============================== -->
+                    <div>
+                        <a href="index.html"><img class="logo" src="img/GuardianLogoHorizFinal.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--This stuff is needed for the page layout to work, it is also for potential menu items on the right side-->
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+              <div class="overlay"></div> <!--sidebar open dark overlay over background-->
+<!-- END Sidebar ===========================================================================================-->
+
+<!--===========================================================================================-->
+<!-- Full Page Image Header with Vertically Centered Content -->
+<!--===========================================================================================-->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-6">
+        <h1 class="header font-weight-light text-shadow">Guardian Therapeutics</h1>
+        <p class="lead text-shadow">Bringing to life the full potential of aptamer therapeutics.</p>
+        <!-- <i class="fas fa-chevron-down fa-2x scrollarrow" style="color: white;"></i> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--===========================================================================================-->
+<!-- Page Content: Aptamers -->
+<!--===========================================================================================-->
+
+<section class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="font-weight-normal">Aptamers</h2>
+    <div class="row">
+      <div class="col-12">
+        <ul>
+      <li class="lead font-weight-normal">Aptamers are short nucleic acids that bind to a specific target molecule</li>
+      <li class="lead font-weight-normal">The word aptamer comes from the Latin aptus meaning fit</li>
+      <li class="lead font-weight-normal">At the molecular level, aptamers bind to their target site through electrostatic interactions, hydrophobic interactions, and their complementary shapes</li>
+      <li class="lead font-weight-normal">Aptamers have been discovered that are specific to small molecules, proteins, nucleic acids, cells, tissues and organisms</li>
+    </ul>
+      </div>
+      <div class="col-12 text-center">
+        <p>BT100 aptamer:vWF A1 domain complex</p>
+      </div>
+      <div class="col-12 col-md-6 text-center bg-white home-aptamers-1">
+         <img src="img/our-practice-of-discovery-aptamers-1.svg" alt="..." width="100%">
+      </div>
+      <div class="col-12 col-md-6 text-right bg-white home-aptamers-2">
+         <img src="img/our-practice-of-discovery-aptamers-2.svg" alt="..." width="100%">
+         <p style="font-size:12px;color:grey;">Zhu et al, J Thromb Haemost. 2020 Feb 3.</p>
+      </div>
+    </div><!-- end row --> 
+
+  </div><!-- end container -->
+</section>
+
+<!--===========================================================================================-->
+<!-- Page Content: ApDC -->
+<!--===========================================================================================-->
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-normal">ApDC</h2>
+    <p class="lead">Aptamer Drug Conjugates:  A Novel Targeted Delivery Platform for Oncology</p>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <img src="img/who-we-are-potential-icn.svg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="...">
+      </div>
+      <div class="col-12 col-md-9 my-auto">
+        <p class="lead mt-3"><strong class="text-orange">Targeted</strong> therapy modality in which <strong class="text-orange">aptamers replace mAbs</strong> in drug conjugates</p>
+        <p class="lead mt-3">Have target <strong class="text-orange">specificity and affinity</strong> on par with mAbs</p>
+        <p class="lead mt-3">Can be selected for <strong class="text-orange">inhibitory, stimulatory, or no biological activity</strong></p>
+        <p class="lead mt-3"><strong class="text-orange">Support</strong> receptor-mediated internalization</p>
+        <p class="lead mt-3">Different aptamers may be <strong class="text-orange">joined</strong> to form bi-specific therapeutic agents</p>
+      </div><!-- end col -->
+    </div><!-- end row --> 
+    <div class="text-center mt-3">
+      <a href="ApDC.html">
+      <button type="button" class="btn btn-orange grow">Learn more</button>
+      </a>
+    </div>
+  </div><!-- end container -->
+</section>
+
+<!--===========================================================================================-->
+<!-- Page Content: Therapeutic Areas & Programs -->
+<!--===========================================================================================-->
+
+<section class="py-5 bg-light">
+  <div class="container">
+
+    <h2 class="font-weight-normal">Therapeutic Areas & Programs</h2>
+    <p class="lead">We focus on six difference therapeutic areas and programs, each with their own targets.</p>
+    <div class="row text-center">
+      <div class="col-6 col-md-2 pt-4 pt-md-0">
+        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="0">
+          <div class="card shadow">
+            <img src="img/home-therapeutic-hemotology-icn.svg" class="card-img-top" alt="Hematology">
+            <div class="card-body">
+              <h5 class="card-title">Hematology</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 pt-4 pt-md-0">
+        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="50">
+          <div class="card shadow">
+            <img src="img/home-therapeutic-cardiovascular-icn.svg" class="card-img-top" alt="Oncology ADC">
+            <div class="card-body">
+              <h5 class="card-title">Cardiovascular</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 pt-4 pt-md-0">
+        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="100">
+          <div class="card shadow">
+            <img src="img/home-therapeutic-oncology-icn.svg" class="card-img-top" alt="Oncology ADC">
+            <div class="card-body">
+              <h5 class="card-title">Oncology ADC</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 pt-4 pt-md-0">
+        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="150">
+          <div class="card shadow">
+            <img src="img/home-therapeutic-immuno-oncology-icn.svg" class="card-img-top" alt="Immuno-Oncology">
+            <div class="card-body card-body-margin-0">
+              <h5 class="card-title">Immuno-Oncology</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 pt-4 pt-md-0">
+        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="200">
+          <div class="card shadow">
+            <img src="img/home-therapeutic-immunology-icn.svg" class="card-img-top" alt="Immunology">
+            <div class="card-body">
+              <h5 class="card-title">Immunology</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 pt-4 pt-md-0">
+        <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="250">
+          <div class="card shadow">
+            <img src="img/home-therapeutic-gi-icn.svg" class="card-img-top" alt="Gastrointestinal">
+            <div class="card-body">
+              <h5 class="card-title">Gastrointestinal</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- end row -->
+    <div class="text-center mt-5">
+      <a href="therapeutic-areas-and-programs.html">
+      <button type="button" class="btn btn-orange grow">Learn more</button>
+      </a>
+    </div>
+    
+
+  </div><!-- end container -->
+</section>
+
+<!--===========================================================================================-->
+<!-- Page Content: Our Practice of Discovery -->
+<!--===========================================================================================-->
+
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6" data-aos="fade" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="0">
+        <h2 class="font-weight-normal">Revolutionizing Discovery Of Aptamer Therapeutics</h2><br>
+        <!-- <p class="lead">Revolutionizing Discovery Of Aptamer Therapeutics</p> -->
+        <div class="row">
+          <div class="col-1">
+          <!-- Badge -->
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="#FF9F4F" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+        </div>
+          <div class="col-11">
+            <!-- Heading -->
+            <h4 class="pl-3 pl-md-0 pb-2">Rapid Aptamer Discovery Process</h4>
+            <!-- Text -->
+            <!-- <p class="text-muted mb-6 mb-md-8">
+              We offer multiple types of pricing. This includes per project, hourly, monthly, and annually.
+            </p> -->
+          </div>
+
+        <div class="col-1">
+          <!-- Badge -->
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="#FF9F4F" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </div>
+          <div class="col-11">
+            <!-- Heading -->
+            <h4 class="pl-3 pl-md-0 pb-2">Deep Sequencing</h4>
+          </div>
+
+        <div class="col-1">
+          <!-- Badge -->
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="#FF9F4F" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </div>
+          <div class="col-11">
+            <!-- Heading -->
+            <h4 class="pl-3 pl-md-0 pb-2">Therapeutic-relevant Nucleotide Chemistries</h4>
+          </div>
+
+        <div class="col-1">
+          <!-- Badge -->
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="#FF9F4F" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>
+          </div>
+          <div class="col-11">
+            <!-- Heading -->
+            <h4 class="pl-3 pl-md-0 pb-2">High-throughput Aptamer Synthesis</h4>
+          </div>
+          <div class="col-12">
+            <!-- Badge -->
+            <a href="aptamer-discovery.html"><button type="button" class="btn btn-orange grow">Learn more</button></a>
+          </div>
+        </div>
+      </div><!-- end col -->
+
+      <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="0">
+        <img src="img/home-discovery-aptamer.png" class="card-img-top" alt="home-discovery-aptamer">
+      </div>
+    </div><!-- end row -->
+    
+
+  </div><!-- end container -->
+</section>
+
+<!--===========================================================================================-->
+<!-- Page Content: Our People -->
+<!--===========================================================================================-->
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="font-weight-normal">Our People</h2>
+    <p class="lead">Meet the leaders who are innovating Aptamer Therapeutics</p>
+    <div class="row">
+      <div class="col-12 col-md-3 pb-2 pb-md-0">
+        <img src="img/JimGilbert.png" class="card-img-top" alt="Jim Gilbert, founder">
+      </div><!-- end col -->
+      <div class="col-12 col-md-2 my-auto text-md-left text-center pb-3 pb-md-0">
+        <p class="lead"><strong>CEO</strong>
+        <br>Jim Gilbert, MD
+        <br>Co-Founder
+        </p>
+      </div>
+      <div class="col-12 col-md-3 pb-2 pb-md-0">
+        <img src="img/ShuhaoZhu.png" class="card-img-top" alt="Shuhao Zhu, cofounder">
+      </div><!-- end col -->
+      <div class="col-12 col-md-2 my-auto text-md-left text-center pb-3 pb-md-0">
+        <p class="lead"><strong>CSO</strong>
+        <br>Shuhao Zhu, PhD
+        <br>Co-Founder
+        </p>
+      </div>
+      <div class="col-12 col-md-2 my-auto text-md-left text-center pb-3 pb-md-0">
+        <a href="our-people.html"><button type="button" class="btn btn-orange mx-auto grow">Meet the team</button></a>
+      </div>
+
+    </div><!-- end row --> 
+  </div><!-- end container -->
+</section>
+
+<!--===========================================================================================-->
+<!-- Page Content: Contact Footer -->
+<!--===========================================================================================-->
+
+<section class="py-5 bg-blue">
+  <div class="container text-white">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <h2 class="font-weight-normal">Contact</h2>
+        <p style="font-size:14px;">&#169; 2020 Guardian Therapeutics. All rights reserved.</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <p class="lead"><strong>Headquarters</strong><br>Guardian Therapeutics<br>101 Hartwell Avenue<br>Suite 2<br>Lexington, MA 02421<br>+1 (781) 918-6562</p>
+      </div>
+      <div class="col-12 col-md-4">
+        <p class="lead"><strong>Inquiries</strong><br>jim.gilbert@guardian-rx.com</p>
+      </div>
+    </div><!-- end row --> 
+  </div><!-- end container -->
+</section>
+
+
+            
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- AOS JS USED FOR SCROLLING ANIMATIONS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- sidebar javascript -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+  </body>

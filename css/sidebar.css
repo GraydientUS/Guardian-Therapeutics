@@ -1,0 +1,241 @@
+/*
+    DEMO STYLE
+*/
+
+
+p {
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 1.7em;
+}
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.7em;
+    }
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.navbar {
+    padding: 15px 0px 15px 10px;
+    width: 100%;
+    background: #fff;
+    background-color: white!important;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    z-index: 50;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.btn-info {
+    background-color: white;
+    border-color: white;
+}
+
+.btn-info:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+    background-color: white;
+    border-color: white;
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255); 
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #2E72B0;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px) {
+    #sidebar {
+        width:50vw;
+    }
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #2E72B0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #00477C;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 49;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #2E72B0;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px 10px 10px 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    #sidebar ul li a {
+        font-size: 0.83em;
+    }
+}
+
+#sidebar ul li a:hover {
+    color: #00477C;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #2E72B0;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    background: #276195;
+}
+
+@media only screen and (max-width: 600px) {
+    ul ul a {
+        font-size: 0.65em !important;
+    }
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #00477C;
+}
+
+a.article,
+a.article:hover {
+    background: #00477C !important;
+    color: #fff !important;
+}
+
+ul.list-unstyled.components {
+    margin-top: 35%;
+}
+
+#mCSB_1 {
+    width: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mCSB_1 {
+        width:100vw;
+    }
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
