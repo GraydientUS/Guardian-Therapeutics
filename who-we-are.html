@@ -16,7 +16,7 @@
 
     <!--Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- <link rel="stylesheet" href="css/sidebar.css"> -->
 
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -30,105 +30,42 @@
   <body>
 
 <div class="wrapper">
-<!-- Sidebar ===========================================================================================-->
-        <nav id="sidebar">
-            <div id="dismiss">
-              <svg class="mb-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-              </svg>
-            </div>
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow">
+    <a href="index.html" class="navbar-brand"><img src="img/GuardianLogoHorizFinal.png" alt="" width="182" height="41"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="sidebar-header">
-                <h3></h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <!--<p>EXAMPLE HEADING</p>-->
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <!-- =======================================HOME SUBMENU PLACEHOLDER===========================
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                -->
-                <li>
-                    <a href="ApDC.html">ApDC</a>
-                </li>
-                <li>
-                    <a href="aptamer-discovery.html">Aptamer Discovery</a>
-                </li>
-                
-                
-                <li>
-                    <a href="therapeutic-areas-and-programs.html">Therapeutic Areas & Programs</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">About Us <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="who-we-are.html">Who We Are</a>
-                        </li>
-                        <li>
-                            <a href="our-people.html">Our People</a>
-                        </li>
-                        <li>
-                            <a href="our-partners.html">Our Partners</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- <li>
-                    <a href="library.html">Library</a>
-                </li> -->
-            </ul>
-
-            <!--=sidebar bottom buttons=-->
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="contact.html" class="download font-weight-normal">Contact Us</a>
-                </li>
-                <!-- <li>
-                    <a href="#" class="article"><i class="fab fa-instagram"></i></a>
-                </li> -->
-            </ul>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-list" fill="#2E72B0" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg><!-- hamburger icon -->
-                    </button>
-                   <!-- ============================= top right collapsable menu button =============================== -->
-                    <div>
-                        <a href="index.html"><img class="logo" src="img/GuardianLogoHorizFinal.png"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--This stuff is needed for the page layout to work, it is also for potential menu items on the right side-->
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-              <div class="overlay"></div> <!--sidebar open dark overlay over background-->
-<!-- END Sidebar ===========================================================================================-->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="band-therapeutics.html" class="nav-item nav-link">Band Therapeutics</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Aptamer R&D
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="aptamer-discovery.html">Revolutionizing Aptamer Discovery</a>
+                <a class="dropdown-item" href="engineering-drug-like-aptamer-therapeutics.html">Engineering Drug-Like Aptamer Therapeutics</a>
+                <a class="dropdown-item" href="RD-pipeline.html">R&D Pipeline</a>
+                <a class="dropdown-item" href="therapeutic-areas.html">Therapeutic Areas</a>
+              </div>
+            </li>
+            <a href="ApDC.html" class="nav-item nav-link">ApDC</a>
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="who-we-are.html">Who We Are</a>
+                <a class="dropdown-item" href="our-people.html">Our People</a>
+                <a class="dropdown-item" href="our-partners.html">Our Partners</a>
+              </div>
+            </li>
+            <a href="contact.html"><button type="button" class="btn btn-orange grow mx-md-3 my-2 my-md-0">Contact Us</button></a>
+        </div>
+    </div>
+</nav>
 
 <!--===========================================================================================-->
 <!-- Full Page Image Header with Vertically Centered Content -->
@@ -139,6 +76,7 @@
       <div class="col-12 col-md-6">
         <h1 class="header font-weight-light">Who We Are</h1>
         <p class="lead">Guardian is an independent, family- and employee-owned biotech enterprise specialized in discovery and development of aptamer therapeutics.</p>
+        <p class="lead">For general inquiries: <br><a href="mailto:info@guardian-rx.com" target="_blank"><u>info@guardian-rx.com</u></a><br>For business development inquiries: <a href="mailto:businessdevelopment@guardian-rx.com" target="_blank"><u>businessdevelopment@guardian-rx.com</u></a></p>
       </div>
     </div>
   </div>
@@ -202,13 +140,13 @@
     <div class="row">
       <div class="col-12 col-md-4">
         <h2 class="font-weight-normal">Contact</h2>
-        <p style="font-size:14px;">&#169; 2020 Guardian Therapeutics. All rights reserved.</p>
+        <p style="font-size:14px;">&#169; 2021 Guardian Therapeutics. All rights reserved.</p>
       </div>
       <div class="col-12 col-md-4">
-        <p class="lead"><strong>Headquarters</strong><br>Guardian Therapeutics<br>101 Hartwell Avenue<br>Suite 2<br>Lexington, MA 02421<br>+1 (781) 918-6562</p>
+        <p class="lead"><strong>Headquarters</strong><br>Guardian Therapeutics<br>101 Hartwell Avenue<br>Suite 2<br>Lexington, MA 02421<br>+1 (781) 918-6580</p>
       </div>
       <div class="col-12 col-md-4">
-        <p class="lead"><strong>Inquiries</strong><br>info@guardian-rx.com</p>
+        <p class="lead"><strong>General Inquiries:</strong> <br><a href="mailto:info@guardian-rx.com" target="_blank"><u>info@guardian-rx.com</u></a><br><br><strong>Business Development Inquiries:</strong> <a href="mailto:businessdevelopment@guardian-rx.com" target="_blank"><u>businessdevelopment@guardian-rx.com</u></a></p>
       </div>
     </div><!-- end row --> 
   </div><!-- end container -->

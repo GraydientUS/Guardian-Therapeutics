@@ -10,6 +10,23 @@ body, .container, .container-fluid {
   overflow-x: hidden!important;
 }
 
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.dropdown-toggle::after {
+  margin-left:0px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #2E72B0;
+}
+
 .text-orange {
   color:#FF9F4F;
 }
@@ -337,3 +354,6 @@ transform:scale(1.1);
   }
 }
 
+/* ---------------------------------------------------
+   RD pipeline
+----------------------------------------------------- */

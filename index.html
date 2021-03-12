@@ -16,7 +16,7 @@
 
     <!--Custom CSS -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/sidebar.css">
+    <!-- <link rel="stylesheet" href="css/sidebar.css"> -->
 
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -31,103 +31,44 @@
 
 <div class="wrapper">
 <!-- Sidebar ===========================================================================================-->
-        <nav id="sidebar">
-            <div id="dismiss">
-              <svg class="mb-1" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-left-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-              </svg>
-            </div>
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow">
+    <a href="index.html" class="navbar-brand"><img src="img/GuardianLogoHorizFinal.png" alt="" width="182" height="41"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="sidebar-header">
-                <h3></h3>
-            </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="band-therapeutics.html" class="nav-item nav-link">Band Therapeutics</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Aptamer R&D
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="aptamer-discovery.html">Revolutionizing Aptamer Discovery</a>
+                <a class="dropdown-item" href="engineering-drug-like-aptamer-therapeutics.html">Engineering Drug-Like Aptamer Therapeutics</a>
+                <a class="dropdown-item" href="RD-pipeline.html">R&D Pipeline</a>
+                <a class="dropdown-item" href="therapeutic-areas.html">Therapeutic Areas</a>
+              </div>
+            </li>
+            <a href="ApDC.html" class="nav-item nav-link">ApDC</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="who-we-are.html">Who We Are</a>
+                <a class="dropdown-item" href="our-people.html">Our People</a>
+                <a class="dropdown-item" href="our-partners.html">Our Partners</a>
+              </div>
+            </li>
+            <a href="contact.html"><button type="button" class="btn btn-orange grow mx-md-3 my-2 my-md-0">Contact Us</button></a>
+        </div>
+    </div>
+</nav>
 
-            <ul class="list-unstyled components">
-                <!--<p>EXAMPLE HEADING</p>-->
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <!-- =======================================HOME SUBMENU PLACEHOLDER===========================
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                -->
-                <li>
-                    <a href="ApDC.html">ApDC</a>
-                </li>
-                <li>
-                    <a href="aptamer-discovery.html">Aptamer Discovery</a>
-                </li>
-                
-                
-                <li>
-                    <a href="therapeutic-areas-and-programs.html">Therapeutic Areas & Programs</a>
-                </li>
-                <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">About Us <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="who-we-are.html">Who We Are</a>
-                        </li>
-                        <li>
-                            <a href="our-people.html">Our People</a>
-                        </li>
-                        <li>
-                            <a href="our-partners.html">Our Partners</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- <li>
-                    <a href="library.html">Library</a>
-                </li> -->
-            </ul>
 
-            <!--=sidebar bottom buttons=-->
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="contact.html" class="download font-weight-normal">Contact Us</a>
-                </li>
-                <!-- <li>
-                    <a href="#" class="article"><i class="fab fa-instagram"></i></a>
-                </li> -->
-            </ul>
-        </nav>
-
-        <!-- Page Content  -->
-        <div id="content">
-
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-list" fill="#2E72B0" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg><!-- hamburger icon -->
-                    </button>
-                   <!-- ============================= top right collapsable menu button =============================== -->
-                    <div>
-                        <a href="index.html"><img class="logo" src="img/GuardianLogoHorizFinal.png"></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--This stuff is needed for the page layout to work, it is also for potential menu items on the right side-->
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-              <div class="overlay"></div> <!--sidebar open dark overlay over background-->
 <!-- END Sidebar ===========================================================================================-->
 
 <!--===========================================================================================-->
@@ -199,7 +140,7 @@
     </div><!-- end row --> 
     <div class="text-center mt-3">
       <a href="ApDC.html">
-      <button type="button" class="btn btn-orange grow">Learn more</button>
+      <button type="button" class="btn btn-orange grow">Learn more</button><br><br>
       </a>
     </div>
   </div><!-- end container -->
@@ -277,8 +218,8 @@
       </div>
     </div><!-- end row -->
     <div class="text-center mt-5">
-      <a href="therapeutic-areas-and-programs.html">
-      <button type="button" class="btn btn-orange grow">Learn more</button>
+      <a href="therapeutic-areas.html">
+      <button type="button" class="btn btn-orange grow mb-2">Learn more</button>
       </a>
     </div>
     
@@ -303,7 +244,7 @@
         </div>
           <div class="col-11">
             <!-- Heading -->
-            <h4 class="pl-3 pl-md-0 pb-2">Rapid Aptamer Discovery Process</h4>
+            <h4 class="pl-3 pl-md-0 pb-2 lead">Rapid Aptamer Discovery Process</h4>
             <!-- Text -->
             <!-- <p class="text-muted mb-6 mb-md-8">
               We offer multiple types of pricing. This includes per project, hourly, monthly, and annually.
@@ -316,7 +257,7 @@
           </div>
           <div class="col-11">
             <!-- Heading -->
-            <h4 class="pl-3 pl-md-0 pb-2">Deep Sequencing</h4>
+            <h4 class="pl-3 pl-md-0 pb-2 lead">Deep Sequencing</h4>
           </div>
 
         <div class="col-1">
@@ -325,7 +266,7 @@
           </div>
           <div class="col-11">
             <!-- Heading -->
-            <h4 class="pl-3 pl-md-0 pb-2">Therapeutic-relevant Nucleotide Chemistries</h4>
+            <h4 class="pl-3 pl-md-0 pb-2 lead">Therapeutic-relevant Nucleotide Chemistries</h4>
           </div>
 
         <div class="col-1">
@@ -334,17 +275,17 @@
           </div>
           <div class="col-11">
             <!-- Heading -->
-            <h4 class="pl-3 pl-md-0 pb-2">High-throughput Aptamer Synthesis</h4>
+            <h4 class="pl-3 pl-md-0 pb-2 lead">High-throughput Aptamer Synthesis</h4>
           </div>
-          <div class="col-12">
+          <div class="col-12 text-center text-md-left">
             <!-- Badge -->
-            <a href="aptamer-discovery.html"><button type="button" class="btn btn-orange grow">Learn more</button></a>
+            <a href="aptamer-discovery.html"><button type="button" class="btn btn-orange grow mt-3">Learn more</button></a>
           </div>
         </div>
       </div><!-- end col -->
 
       <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-out-cubic" data-aos-once="true" data-aos-delay="0">
-        <img src="img/home-discovery-aptamer.png" class="card-img-top" alt="home-discovery-aptamer">
+        <img src="img/home-discovery-aptamer.png" class="card-img-top my-2" alt="home-discovery-aptamer">
       </div>
     </div><!-- end row -->
     
@@ -353,17 +294,53 @@
 </section>
 
 <!--===========================================================================================-->
-<!-- Page Content: Our People -->
+<!-- Page Content: Our People DESKTOP-->
 <!--===========================================================================================-->
 
-<section class="py-5 bg-light">
+<section class="py-5 bg-light m-display-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 pb-2 pb-md-0 my-auto">
+        <h2 class="font-weight-normal">Our People</h2>
+        <p class="lead">Meet the leaders who are innovating Aptamer Therapeutics</p>
+        <a href="our-people.html"><button type="button" class="btn btn-orange mx-auto grow">Meet the team</button></a>
+      </div>
+      <div class="col-12 col-md-4 pb-2 pb-md-0">
+        <img src="img/home-team.svg" class="card-img-top" alt="Team Graphic">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--===========================================================================================-->
+<!-- Page Content: Our People MOBILE-->
+<!--===========================================================================================-->
+
+<section class="py-5 bg-light display-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 pb-2 pb-md-0 my-auto">
+        <h2 class="font-weight-normal">Our People</h2>
+        <img src="img/home-team.svg" class="card-img-top my-4" alt="Team Graphic">
+        <p class="lead">Meet the leaders who are innovating Aptamer Therapeutics</p>
+      </div>
+      <div class="col-12 col-md-6 pb-2 pb-md-0 my-auto text-center text-md-left">
+        <a href="our-people.html"><button type="button" class="btn btn-orange mx-auto grow">Meet the team</button></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- <section class="py-5 bg-light">
   <div class="container">
     <h2 class="font-weight-normal">Our People</h2>
     <p class="lead">Meet the leaders who are innovating Aptamer Therapeutics</p>
     <div class="row">
       <div class="col-12 col-md-3 pb-2 pb-md-0">
         <img src="img/JimGilbert.png" class="card-img-top" alt="Jim Gilbert, founder">
-      </div><!-- end col -->
+      </div>
       <div class="col-12 col-md-2 my-auto text-md-left text-center pb-3 pb-md-0">
         <p class="lead"><strong>CEO</strong>
         <br>Jim Gilbert, MD
@@ -372,7 +349,7 @@
       </div>
       <div class="col-12 col-md-3 pb-2 pb-md-0">
         <img src="img/ShuhaoZhu.png" class="card-img-top" alt="Shuhao Zhu, cofounder">
-      </div><!-- end col -->
+      </div>
       <div class="col-12 col-md-2 my-auto text-md-left text-center pb-3 pb-md-0">
         <p class="lead"><strong>CSO</strong>
         <br>Shuhao Zhu, PhD
@@ -383,9 +360,9 @@
         <a href="our-people.html"><button type="button" class="btn btn-orange mx-auto grow">Meet the team</button></a>
       </div>
 
-    </div><!-- end row --> 
-  </div><!-- end container -->
-</section>
+    </div>
+  </div>
+</section> -->
 
 <!--===========================================================================================-->
 <!-- Page Content: Contact Footer -->
@@ -396,13 +373,13 @@
     <div class="row">
       <div class="col-12 col-md-4">
         <h2 class="font-weight-normal">Contact</h2>
-        <p style="font-size:14px;">&#169; 2020 Guardian Therapeutics. All rights reserved.</p>
+        <p style="font-size:14px;">&#169; 2021 Guardian Therapeutics. All rights reserved.</p>
       </div>
       <div class="col-12 col-md-4">
-        <p class="lead"><strong>Headquarters</strong><br>Guardian Therapeutics<br>101 Hartwell Avenue<br>Suite 2<br>Lexington, MA 02421<br>+1 (781) 918-6562</p>
+        <p class="lead"><strong>Headquarters</strong><br>Guardian Therapeutics<br>101 Hartwell Avenue<br>Suite 2<br>Lexington, MA 02421<br>+1 (781) 918-6580</p>
       </div>
       <div class="col-12 col-md-4">
-        <p class="lead"><strong>Inquiries</strong><br>info@guardian-rx.com</p>
+        <p class="lead"><strong>General Inquiries:</strong> <br><a href="mailto:info@guardian-rx.com" target="_blank"><u>info@guardian-rx.com</u></a><br><br><strong>Business Development Inquiries:</strong> <a href="mailto:businessdevelopment@guardian-rx.com" target="_blank"><u>businessdevelopment@guardian-rx.com</u></a></p>
       </div>
     </div><!-- end row --> 
   </div><!-- end container -->
